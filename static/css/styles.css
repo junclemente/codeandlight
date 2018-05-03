@@ -3,3 +3,15 @@ body {
     color: #cccccc;
     background: #000000;
 }
+
+.monospace-font {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.cursive-font {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.full-page-height {
+    height: 100vh;
+}
