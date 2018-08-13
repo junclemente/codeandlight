@@ -1,0 +1,31 @@
+{
+  "name": "www.codeandlight.com",
+  "version": "1.0.0",
+  "description": "Website for www.codeandlight.com",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^1.1.0",
+    "gulp-cssimport": "^6.0.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-size": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junclemente/codeandlight.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junclemente/codeandlight/issues"
+  },
+  "homepage": "https://github.com/junclemente/codeandlight#readme"
+}
