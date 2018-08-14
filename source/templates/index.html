@@ -7,13 +7,13 @@
             <div class="half-page row align-items-center text-center">
 
                 <div class="col"></div>
-                <div class="text-code monospace-font col-sm-3">
+                <div class="text-code code-font col-sm-3">
                     &ltCODE&gt
                 </div>
                 <div class="col-sm-1">
                     and
                 </div>
-                <div class="text-light cursive-font col-sm-3">
+                <div class="text-light light-font col-sm-3">
                     light
                 </div>
                 <div class="col"></div>
@@ -29,11 +29,11 @@
     <section id="about" class="content full-page">
         <h3>About Me</h3>
         <div class="text-norm text-box">
-            <h5>&ltCODE&gt</h5>
+            <h5 class="code-font text-norm">&ltCODE&gt</h5>
             <p>I am a full stack web developer which means I am knowledgeable in developing the logical, software side and the visual, user-facing side of your website.</p>
             <p>I typically use Python and Flask in the backend and JavaScript, jQuery, and Bootstrap on the front-end. I am always interested in learning new languages and frameworks.</p>
 
-            <h5>light</h5>
+            <h5 class="light-font text-norm">light</h5>
             <p>When I'm not coding, I like to capture moments of light with my camera to create visually appealing photographs that also encompasses an experience.</p>
             <p>With front-end development, I follow the same concept. I try to create a visually appealing user interface that also provides a positive user experience.</p>
         </div>
@@ -41,10 +41,22 @@
 
     <section id="projects" class="content full-page">
         <h3>My Projects</h3>
+            {% for project in projects %}
+                <div class="text-box text-norm">
+                    <h4>{{ project.title }}</h4>
+                    <p>{{ project.desc }}</p>
+                    <p class="code-font"><a href="{{ project.url }}" target="_blank">{{ project.url }}</a></p>
+                </div>
+                <hr>
+            {% endfor %}
+
     </section>
 
     <section id="contact" class="content full-page">
         <h3>Contact Me</h3>
+        <p class="text-norm"><a href="https://www.instagram.com/code_and_light" target="_blank"><span class="fab fa-instagram"></span></a></p>
+        <p class="text-norm"><a href="https://www.flickr.com/juncphotos" target="_blank"><span class="fab fa-flickr"></span></a></p>
+        <p class="text-norm"><a href="https://www.linkedin.com/in/junclemente" target="_blank"><span class="fab fa-linkedin"></span></a></p>
     </section>
 
 </div>

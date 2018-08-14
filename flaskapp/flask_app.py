@@ -13,7 +13,39 @@ def hello_world():
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html')
+    projects = {
+        { title: "GS Communication Website",
+        website: "",
+        code: "",
+        image: ""
+        },
+        { title: "",
+        website: "",
+        code: "",
+        image: ""
+        },
+        { title: "",
+        website: "",
+        code: "",
+        image: ""
+        },
+        { title: "",
+        website: "",
+        code: "",
+        image: ""
+        },
+        { title: "",
+        website: "",
+        code: "",
+        image: ""
+        },
+        { title: "",
+        website: "",
+        code: "",
+        image: ""
+        },
+    }
+    return render_template('index.html', projects=projects)
 
 
 if __name__ == "__main__":

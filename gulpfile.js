@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     del = require('del'),
     cssImport = require('gulp-cssimport'),
     cleancss = require('gulp-clean-css'),
+    pleeease = require('gulp-pleeease'),
     concat = require('gulp-concat'),
     gulpCopy = require('gulp-copy'),
     size = require('gulp-size'),
@@ -18,7 +19,7 @@ var source = 'source/',
     // define source/destination files for html
     html = {
         in: source + 'templates/*.html',
-        out: dest,
+        out: dest + 'templates',
         options: { prefix: 1 }
     },
 
@@ -35,13 +36,19 @@ var source = 'source/',
 
     css = {
         // in: source + 'static/css/*.*',
-        in: source + 'static/css/styles.css',
+        in: source + 'static/css/*.*',
         // watch: [source + 'static/css/*']
-        out: dest + 'static/css/'
+        out: dest + 'static/css/',
+        pleeeaseOpts: {
+            autoprefixer: { browsers: ['last 2 version', '>5%' ]},
+            // pseudoElements: true,
+            mqpacker: true,
+            rem: ['16px']
+        }
     },
 
     pyFiles = {
-        in: source + '**/*.*',
+        in: source + '*.py',
         options: { prefix: 1 }
     };
 
@@ -59,18 +66,21 @@ gulp.task('clean', function () {
 
 gulp.task('python', function() {
     "use strict";
+    // return gulp.src(pyFiles.in)
+    //     .pipe(newer(dest))
+    //     .pipe(gulpCopy(dest, pyFiles.options))
+    //     .pipe(gulp.dest(dest));
     return gulp.src(pyFiles.in)
         .pipe(newer(dest))
-        .pipe(gulpCopy(dest, pyFiles.options))
         .pipe(gulp.dest(dest));
 });
 
 gulp.task('html', function () {
     "use strict";
     return gulp.src(html.in)
-        .pipe(newer(dest))
-        .pipe(gulpCopy(dest, html.options))
-        .pipe(gulp.dest(dest));
+        .pipe(newer(html.out))
+        // .pipe(gulpCopy(dest, html.options))
+        .pipe(gulp.dest(html.out))
 });
 
 gulp.task('js', function () {
@@ -84,10 +94,16 @@ gulp.task('js', function () {
 gulp.task('css', function () {
     "use strict";
     return gulp.src(css.in)
-        // .pipe(concat('styles.css'))
+        .pipe(concat('styles.css'))
         .pipe(cssImport())
-        .pipe(cleancss())
-        .pipe(gulp.dest(css.out));
+    //     .pipe(cleancss())
+    //     .pipe(gulp.dest(css.out));
+
+    // return gulp.src(css.in)
+        .pipe(size({title: 'CSS in: '}))
+        .pipe(pleeease(css.pleeeaseOpts))
+        .pipe(size({title: 'CSS out: '}))
+        .pipe(gulp.dest(css.out))
 });
 
 gulp.task('images', function () {
@@ -101,5 +117,5 @@ gulp.task('images', function () {
 });
 
 
-gulp.task('default', ['images', 'html', 'css', 'js', 'python'], function () {
+gulp.task('default', ['images', 'python', 'html', 'css', 'js'], function () {
 });

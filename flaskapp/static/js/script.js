@@ -13,11 +13,7 @@ $("a[href^='#']").click(function(e) {
     e.preventDefault();
 
     var position = $($(this).attr("href")).offset().top;
-
-    if (position > 70) {
-        // Adjust for fixed navbar
-        position -= 70;
-    }
+    position -= 70;
 
     $("body, html").animate({
         scrollTop: position

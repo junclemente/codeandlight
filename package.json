@@ -14,7 +14,9 @@
     "gulp-imagemin": "^4.1.0",
     "gulp-size": "^3.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-pleeease": "^2.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +24,7 @@
     "type": "git",
     "url": "git+https://github.com/junclemente/codeandlight.git"
   },
-  "author": "",
+  "author": "Jun Clemente",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/junclemente/codeandlight/issues"
