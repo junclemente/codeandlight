@@ -12,7 +12,7 @@ body {
 
 @media (min-width: 576px) {
     body {
-        background-image: url("/static/images/lake-henshaw-hor.jpg");
+        background-image: url("../images/lake-henshaw-hor.jpg");
     }
 }
 

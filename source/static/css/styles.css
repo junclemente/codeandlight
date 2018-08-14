@@ -1,6 +1,11 @@
 /*components*/
-@import "components/body.css";
-@import "components/font.css";
+/*@import "components/body.css";*/
+/*@import "components/font.css";*/
 
-/*@import url("components/body.css");*/
-/*@import url("components/font.css");*/
+/*
+@import "body.css";
+@import "font.css";
+*/
+
+@import url("body.css");
+@import url("font.css");
