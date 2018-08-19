@@ -6,8 +6,9 @@ var gulp = require('gulp'),
     cssImport = require('gulp-cssimport'),
     cleancss = require('gulp-clean-css'),
     pleeease = require('gulp-pleeease'),
+    urlAdjuster = require('gulp-css-url-adjuster'),
     concat = require('gulp-concat'),
-    gulpCopy = require('gulp-copy'),
+    // gulpCopy = require('gulp-copy'),
     size = require('gulp-size'),
     imagemin = require('gulp-imagemin');
 
@@ -24,8 +25,8 @@ var source = 'source/',
     },
 
     js = {
-        in: source + 'static/js/*.js',
-        out: dest,
+        in: source + 'static/js/*.*',
+        out: dest + 'static/js/',
         options: { prefix: 1 }
     },
 
@@ -35,15 +36,14 @@ var source = 'source/',
     },
 
     css = {
-        // in: source + 'static/css/*.*',
         in: source + 'static/css/*.*',
-        // watch: [source + 'static/css/*']
         out: dest + 'static/css/',
         pleeeaseOpts: {
             autoprefixer: { browsers: ['last 2 version', '>5%' ]},
             // pseudoElements: true,
             mqpacker: true,
-            rem: ['16px']
+            rem: ['16px'],
+            minifier: false
         }
     },
 
@@ -86,9 +86,11 @@ gulp.task('html', function () {
 gulp.task('js', function () {
     "use strict";
     return gulp.src(js.in)
-        .pipe(newer(dest))
-        .pipe(gulpCopy(dest, js.options))
-        .pipe(gulp.dest(dest))
+        .pipe(newer(js.out))
+        .pipe(size({title: 'JavaScript in: '}))
+        // .pipe(gulpCopy(dest, js.options))
+        .pipe(size({title: 'JavaScript out: '}))
+        .pipe(gulp.dest(js.out))
 });
 
 gulp.task('css', function () {
