@@ -1,0 +1,21 @@
+<h3>My Projects</h3>
+    {% for project in projects %}
+
+            <h3>{{ project.title }}</h3>
+
+            <a href="{{ project.code }}" target="_blank">Link to Code</a>
+            {% if project.url %}
+            &nbsp|&nbsp<a href="{{ project.url }}" target="_blank">Link to Site</a>
+            {% endif %}
+
+    <div class="row">
+        <div class="col-md-4">
+            <img class="project-image" src="/static/images/{{ project.image }}"
+        alt="{{ project.title }}-image">
+        </div>
+        <div class="col-md-8">
+            <p>{{ project.desc }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
