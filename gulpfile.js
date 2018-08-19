@@ -41,7 +41,7 @@ var source = 'source/',
         pleeeaseOpts: {
             autoprefixer: { browsers: ['last 2 version', '>5%' ]},
             mqpacker: true,
-            minifier: false
+            minifier: true
         }
     },
 
