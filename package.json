@@ -6,17 +6,21 @@
   "dependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-copy": "^1.1.0",
     "gulp-cssimport": "^6.0.1",
-    "gulp-newer": "^1.4.0",
-    "gulp-clean-css": "^3.10.0",
     "gulp-imagemin": "^4.1.0",
+    "gulp-newer": "^1.4.0",
     "gulp-size": "^3.0.0"
   },
   "devDependencies": {
     "gulp-css-url-adjuster": "^0.2.3",
-    "gulp-pleeease": "^2.0.2"
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-jshint": "^2.1.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-uglify": "^3.0.1",
+    "jshint": "^2.9.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
