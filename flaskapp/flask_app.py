@@ -3,6 +3,8 @@
 from flask import Flask
 from flask import render_template
 
+from my_projects import projects
+
 app = Flask(__name__)
 
 @app.route('/hello_world')
@@ -13,38 +15,7 @@ def hello_world():
 @app.route('/')
 @app.route('/index')
 def index():
-    projects = {
-        { title: "GS Communication Website",
-        website: "",
-        code: "",
-        image: ""
-        },
-        { title: "",
-        website: "",
-        code: "",
-        image: ""
-        },
-        { title: "",
-        website: "",
-        code: "",
-        image: ""
-        },
-        { title: "",
-        website: "",
-        code: "",
-        image: ""
-        },
-        { title: "",
-        website: "",
-        code: "",
-        image: ""
-        },
-        { title: "",
-        website: "",
-        code: "",
-        image: ""
-        },
-    }
+
     return render_template('index.html', projects=projects)
 
 
