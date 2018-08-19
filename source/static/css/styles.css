@@ -7,5 +7,6 @@
 @import "font.css";
 */
 
-@import url("body.css");
-@import url("font.css");
+@import url("components/body.css");
+@import url("components/font.css");
+@import url("components/images.css");
