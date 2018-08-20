@@ -1,12 +1,4 @@
 /*components*/
-/*@import "components/body.css";*/
-/*@import "components/font.css";*/
-
-/*
-@import "body.css";
-@import "font.css";
-*/
-
 @import url("components/body.css");
 @import url("components/font.css");
 @import url("components/images.css");
