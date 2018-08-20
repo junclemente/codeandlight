@@ -1,9 +1,18 @@
 /*body.css*/
+
+/*
+ * Color Palette Link
+ * http://paletton.com/#uid=43+0u0ke4eT92pyctkBjXcVoR9E
+ */
+
 body {
     padding-top: 70px;
-    color: #cccccc;
-    background-color: #000000;
-    background-image: url("../../images/mw-joshuatrees.jpg");
+    /*color: #787242;*/
+    /*color: #ffffff;*/
+    color: #6c6c8e;
+    /*color: #ccbd92;*/
+    background-color: #121236;
+    /*background-image: url("../../images/mw-joshuatrees.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -12,7 +21,7 @@ body {
 
 @media (min-width: 576px) {
     body {
-        background-image: url("../../images/lake-henshaw-hor.jpg");
+        /*background-image: url("../../images/lake-henshaw-hor.jpg");*/
     }
 }
 
@@ -27,4 +36,8 @@ body {
 
 .project {
     margin-bottom: 25px;
+}
+
+.project-head {
+    margin-bottom: 15px;
 }

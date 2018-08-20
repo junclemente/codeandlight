@@ -12,12 +12,10 @@
 }
 
 .code-font {
-    /*font-family: 'Share Tech Mono', monospace;*/
     font-family: 'VT323', monospace;
 }
 
 .light-font {
-    /*font-family: 'Kaushan Script', cursive;*/
     font-family: 'Shadows Into Light', cursive;
 }
 
@@ -29,9 +27,26 @@
     width: 90%;
     vertical-align: center;
     /*background-color: rgba(255, 255, 255, 1.);*/
-    background-color: rgba(40, 40, 40, 0.5);
+    background-color: rgba(8, 8, 31, 0.5);
 }
 
+h1 {
+    color: #675727;
+}
+
+h2,
+h3 {
+    color: #ccc692;
+}
+h4,
+h5,
+h6 {
+    color: #a49e64;
+}
+
+i {
+    color: #625825;
+}
 #contact i {
     font-size: 32px;
 }

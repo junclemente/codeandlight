@@ -1,21 +1,23 @@
 <h3>My Projects</h3>
     {% for project in projects %}
     <div class="project">
-        <h3>{{ project.title }}</h3>
+        <div class="project-head">
+            <h4>{{ project.title }}</h4>
 
-        {% if project.code %}
-            <a href="{{ project.code }}" target="_blank">
-                <i class="fab fa-github-square"></i>&nbsp;View Code
-            </a>
-        {% endif %}
-        {% if project.url %}
             {% if project.code %}
-                &nbsp; | &nbsp;
+                <a href="{{ project.code }}" target="_blank">
+                    <i class="fab fa-github-square"></i>&nbsp;View Code
+                </a>
             {% endif %}
-            <a href="{{ project.url }}" target="_blank">
-                <i class="fas fa-file-alt"></i>&nbsp;View Webpage
-            </a>
-        {% endif %}
+            {% if project.url %}
+                {% if project.code %}
+                    &nbsp; | &nbsp;
+                {% endif %}
+                <a href="{{ project.url }}" target="_blank">
+                    <i class="fas fa-file-alt"></i>&nbsp;View Webpage
+                </a>
+            {% endif %}
+        </div>
 
         <div class="row">
             <div class="col-md-4">
