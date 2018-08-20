@@ -13,7 +13,7 @@ $("a[href^='#']").click(function(e) {
     e.preventDefault();
 
     var position = $($(this).attr("href")).offset().top;
-    position -= 70;
+    position -= 50;
 
     $("body, html").animate({
         scrollTop: position
