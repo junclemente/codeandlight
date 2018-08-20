@@ -28,7 +28,7 @@ projects = [
         "code": "https://github.com/junclemente/mgsite",
         "icons": ["html5", "css3-alt", "js-square"],
         "image": "mgsite.jpg",
-        "desc": "I designed and developed this responsive website for the \
+        "desc": "Designed and developed this responsive website for the \
         wedding of my brother and his fiance. The site incorporates Bootstrap, \
         HTML5, CSS3, JavaScript, jQuery and KnockoutJS. It is a single page \
         application (SPA). To minimize the costs for the bride and groom, the \
@@ -41,8 +41,8 @@ projects = [
         "code": "",
         "icons": ["html5", "wordpress", "css3-alt", "php"],
         "image": "be-jumbotron.jpg",
-        "desc": "Learning WordPress and PHP while I am maintaining and updating \
-        this site."
+        "desc": "Maintain and update this website based on the information \
+        provided by the site designer. This a WordPress / PHP based website."
         },
         {
         "title": "Catechism Class",
@@ -50,7 +50,11 @@ projects = [
         "code": "",
         "icons": ["html5", "css3-alt", "php", "js-square"],
         "image": "cat-class-shield.png",
-        "desc": "I am a remote volunteer for this website. I develop "
+        "desc": "I develop new code and update existing JavaScript/jQuery to \
+        improve client-facing features. I also review and update JavaScript/jQuery \
+        to current standards, fix bugs and improve speed and efficiency. I \
+        collaborate with other team members to maintain and update the website \
+        that uses PHP and MySQL in the backend."
         }
         # {
         # "title": "",
