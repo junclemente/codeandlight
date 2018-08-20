@@ -6,23 +6,23 @@
  */
 
 body {
-    padding-top: 70px;
-    /*color: #787242;*/
-    /*color: #ffffff;*/
+    padding-top: 50px;
     color: #6c6c8e;
-    /*color: #ccbd92;*/
     background-color: #121236;
-    /*background-image: url("../../images/mw-joshuatrees.jpg");*/
+}
+
+@media (min-width: 576px) {
+    #home {
+        background-image: url("../../images/lake-henshaw-hor.jpg");
+    }
+}
+
+#home {
+    background-image: url("../../images/mw-joshuatrees.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom;
-}
-
-@media (min-width: 576px) {
-    body {
-        /*background-image: url("../../images/lake-henshaw-hor.jpg");*/
-    }
 }
 
 .half-page {
@@ -40,4 +40,8 @@ body {
 
 .project-head {
     margin-bottom: 15px;
+}
+
+section h2:first-of-type {
+    padding-top: 20px;
 }

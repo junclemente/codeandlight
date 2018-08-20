@@ -35,13 +35,11 @@ h1 {
 }
 
 h2,
-h3 {
-    color: #ccc692;
-}
+h3,
 h4,
 h5,
 h6 {
-    color: #a49e64;
+    color: #ccc692;
 }
 
 i {
