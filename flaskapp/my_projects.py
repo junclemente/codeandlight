@@ -41,9 +41,8 @@ projects = [
         "code": "",
         "icons": ["html5", "wordpress", "css3-alt", "php"],
         "image": "be-jumbotron.jpg",
-        "desc": "I am the currently the manager of this website. When I took \
-        over, I did not know WordPress or PHP but I am gradually learning more \
-        about this CMS."
+        "desc": "Learning WordPress and PHP while I am maintaining and updating \
+        this site."
         },
         {
         "title": "Catechism Class",
