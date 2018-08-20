@@ -32,3 +32,10 @@
     background-color: rgba(40, 40, 40, 0.5);
 }
 
+#contact i {
+    font-size: 32px;
+}
+
+#projects i {
+    font-size: 24px;
+}
