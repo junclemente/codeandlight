@@ -55,6 +55,39 @@ projects = [
         to current standards, fix bugs and improve speed and efficiency. I \
         collaborate with other team members to maintain and update the website \
         that uses PHP and MySQL in the backend."
+        },
+        {
+        "title": "!Frogger - Arcade Game Clone",
+        "url": "http://junclemente.github.io/arcade_clone_frogger/",
+        "code": "https://github.com/junclemente/arcade_clone_frogger",
+        "icons": ["html5", "css3-alt", "js-square"],
+        "image": "not-frogger.png",
+        "desc": "A clone of a popular classic arcade game, this page is \
+        powered by an HTML5 Canvas and developed using the best practices \
+        in JavaScript Object-Oriented Programming (OOP)."
+        },
+        {
+        "title": "Visit Mammoth Lakes! - Neighborhood Map",
+        "url": "https://junclemente.github.io/neighborhood-map/",
+        "code": "https://github.com/junclemente/neighborhood-map",
+        "icons": ["html5", "css3-alt", "js-square", "yelp", "google"],
+        "image": "visit-mammoth.png",
+        "desc": "A single page application (SPA) developed using HTML5, CSS3 \
+        Bootstrap and API calls to create a responsive website using reusable, \
+        scalable code with KnockoutJS, JavaScript and jQuery."
+        },
+        {
+        "title": "Catalog Project - Journey through Amazon Lightsail",
+        "url": "",
+        "code": "https://github.com/junclemente/catalog_project",
+        "icons": ["aws", "html5", "python", "css3-alt", "js-square", "google",
+                "linux"],
+        "image": "fsnd-catalog.png",
+        "desc": "Python, Flask, PostgreSQL and developing my own RESTful APIs \
+        are amont the technologies used in creating this project. This Full \
+        Stack project included configuring and deploying to a Linux web server \
+        through Amazon Lightsail and using the Google OAuth2 API for \
+        authentication."
         }
         # {
         # "title": "",
