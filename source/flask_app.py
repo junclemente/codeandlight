@@ -3,7 +3,7 @@
 from flask import Flask
 from flask import render_template
 
-from my_projects import projects
+from my_projects import projects, websites, icon_shortcuts
 
 app = Flask(__name__)
 
@@ -16,7 +16,9 @@ def hello_world():
 @app.route('/index')
 def index():
 
-    return render_template('index.html', projects=projects)
+    return render_template('index.html', projects=projects,
+                           websites=websites,
+                           icon_shortcuts=icon_shortcuts)
 
 
 if __name__ == "__main__":
