@@ -1,21 +1,27 @@
+icon_shortcuts = {
+        "html5": "html5",
+        "python": "python",
+        "javascript": "js-square",
+        "css3": "css3-alt",
+        "yelp": "yelp",
+        "google": "google",
+        "linux": "linux",
+        "aws": "aws",
+        "wordpress": "wordpress",
+        "php": "php",
+        "github": "github-square",
+        "browser": "globe-americas"
+}
+
 projects = [
-        {
-        "title": "GS Communication Website",
-        "url": "http://www.gs-communication.com/",
-        "code": "https://github.com/junclemente/flask_gscom",
-        "icons": ["html5", "js-square", "python", "css3-alt"],
-        "image": "gscom.jpeg",
-        "desc": "Designed and developed this website for the engineering firm \
-        GS Communication, giving them their first web presence. The backend is \
-        developed with Python, Flask, and Jinja2. The frontend is designed \
-        using HTML5, CSS3 and Bootstrap."
-        },
+
         {
         "title": "Peptide Sequence Conversion Tool",
+        "short_title": "Peptide Tool",
         "url": "",
         "code": "https://github.com/junclemente/peptools",
-        "icons": ["python", "html5", "css3-alt", "js-square"],
-        "image": "peptidetool.jpeg",
+        "icons": ["python", "html5", "css3", "javascript"],
+        "image": "peptidetool-thumb.jpg",
         "desc": "This is a simple web app using Flask and Python. It takes \
         a 1-letter amino acid chain representation and converts it to the \
         3-letter representation. I developed this web app to improve the \
@@ -23,66 +29,35 @@ projects = [
         previously working for."
         },
         {
-        "title": "Wedding Website",
-        "url": "http://www.graceandmelvin.com",
-        "code": "https://github.com/junclemente/mgsite",
-        "icons": ["html5", "css3-alt", "js-square"],
-        "image": "mgsite.jpg",
-        "desc": "Designed and developed this responsive website for the \
-        wedding of my brother and his fiance. The site incorporates Bootstrap, \
-        HTML5, CSS3, JavaScript, jQuery and KnockoutJS. It is a single page \
-        application (SPA). To minimize the costs for the bride and groom, the \
-        site is hosted on Github Pages using a custom domain name from GoDaddy. \
-        The RSVP is handled using Google Docs services."
-        },
-        {
-        "title": "Body Evolution",
-        "url": "https://www.bodyevolution.org",
-        "code": "",
-        "icons": ["html5", "wordpress", "css3-alt", "php"],
-        "image": "be-jumbotron.jpg",
-        "desc": "Maintain and update this website based on the information \
-        provided by the site designer. This a WordPress / PHP based website."
-        },
-        {
-        "title": "Catechism Class",
-        "url": "https://www.catechismclass.com",
-        "code": "",
-        "icons": ["html5", "css3-alt", "php", "js-square"],
-        "image": "cat-class-shield.png",
-        "desc": "I develop new code and update existing JavaScript/jQuery to \
-        improve client-facing features. I also review and update JavaScript/jQuery \
-        to current standards, fix bugs and improve speed and efficiency. I \
-        collaborate with other team members to maintain and update the website \
-        that uses PHP and MySQL in the backend."
-        },
-        {
         "title": "!Frogger - Arcade Game Clone",
+        "short_title": "Arcade Game Clone",
         "url": "http://junclemente.github.io/arcade_clone_frogger/",
         "code": "https://github.com/junclemente/arcade_clone_frogger",
-        "icons": ["html5", "css3-alt", "js-square"],
-        "image": "not-frogger.png",
+        "icons": ["html5", "css3", "javascript"],
+        "image": "not-frogger-thumb.jpg",
         "desc": "A clone of a popular classic arcade game, this page is \
         powered by an HTML5 Canvas and developed using the best practices \
         in JavaScript Object-Oriented Programming (OOP)."
         },
         {
-        "title": "Visit Mammoth Lakes! - Neighborhood Map",
+        "title": "Visit Mammoth! - A Neighborhood Map Project",
+        "short_title": "Neighborhood Map",
         "url": "https://junclemente.github.io/neighborhood-map/",
         "code": "https://github.com/junclemente/neighborhood-map",
-        "icons": ["html5", "css3-alt", "js-square", "yelp", "google"],
-        "image": "visit-mammoth.png",
+        "icons": ["html5", "css3", "javascript", "yelp", "google"],
+        "image": "visit-mammoth-thumb.jpg",
         "desc": "A single page application (SPA) developed using HTML5, CSS3 \
         Bootstrap and API calls to create a responsive website using reusable, \
         scalable code with KnockoutJS, JavaScript and jQuery."
         },
         {
-        "title": "Catalog Project - Journey through Amazon Lightsail",
+        "title": "Fullstack Catalog Project - A Journey Through Amazon Lightsail",
+        "short_title": "Catalog Project",
         "url": "",
         "code": "https://github.com/junclemente/catalog_project",
-        "icons": ["aws", "html5", "python", "css3-alt", "js-square", "google",
+        "icons": ["aws", "html5", "python", "css3", "javascript", "google",
                 "linux"],
-        "image": "fsnd-catalog.png",
+        "image": "fsnd-catalog-thumb.jpg",
         "desc": "Python, Flask, PostgreSQL and developing my own RESTful APIs \
         are amont the technologies used in creating this project. This Full \
         Stack project included configuring and deploying to a Linux web server \
@@ -91,10 +66,73 @@ projects = [
         }
         # {
         # "title": "",
+        # "short_title": "",
         # "url": "",
         # "code": "",
         # "icons": [],
         # "image": "",
         # "desc": ""
         # }
+]
+
+websites = [
+
+        {
+        "title": "GS Communication Website",
+        "short_title": "",
+        "url": "http://www.gs-communication.com/",
+        "code": "https://github.com/junclemente/flask_gscom",
+        "icons": ["html5", "javascript", "python", "css3"],
+        "image": "gscom-thumb.jpg",
+        "desc": "Designed and developed this website for the engineering firm \
+        GS Communication, giving them their first web presence. The backend is \
+        developed with Python, Flask, and Jinja2. The frontend is designed \
+        using HTML5, CSS3 and Bootstrap."
+        },
+        {
+        "title": "Wedding Website",
+        "short_title": "",
+        "url": "http://www.graceandmelvin.com",
+        "code": "https://github.com/junclemente/mgsite",
+        "icons": ["html5", "css3", "javascript"],
+        "image": "mgsite-thumb.jpg",
+        "desc": "Designed and developed this responsive website for the \
+        wedding of my brother and his fiance. The site incorporates Bootstrap, \
+        HTML5, CSS3, JavaScript, jQuery and KnockoutJS. It is a single page \
+        application (SPA). To minimize the costs for the bride and groom, the \
+        site is hosted on Github Pages using a custom domain name from GoDaddy. \
+        The RSVP is handled using Google Docs services."
+        },
+        {
+        "title": "Body Evolution Website",
+        "short_title": "",
+        "url": "https://www.bodyevolution.org",
+        "code": "",
+        "icons": ["html5", "wordpress", "css3", "php"],
+        "image": "be-jumbotron-thumb.jpg",
+        "desc": "Maintain and update this website based on the information \
+        provided by the site designer. This a WordPress / PHP based website."
+        },
+        {
+        "title": "Catechism Class Website",
+        "short_title": "",
+        "url": "https://www.catechismclass.com",
+        "code": "",
+        "icons": ["html5", "css3", "php", "javascript"],
+        "image": "cat-class-shield-thumb.jpg",
+        "desc": "I develop new code and update existing JavaScript/jQuery to \
+        improve client-facing features. I also review and update JavaScript/jQuery \
+        to current standards, fix bugs and improve speed and efficiency. I \
+        collaborate with other team members to maintain and update the website \
+        that uses PHP and MySQL in the backend."
+        },
+        {
+        "title": "Code and Light",
+        "short_title": "",
+        "url": "",
+        "code": "https://github.com/junclemente/codeandlight",
+        "icons": ["html5", "css3", "javascript", "python"],
+        "image": "mw-joshuatrees-thumb.jpg",
+        "desc": ""
+        }
 ]
