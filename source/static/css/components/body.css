@@ -34,14 +34,12 @@ body {
     width: 100%;
 }
 
-.project {
-    margin-bottom: 25px;
-}
 
-.project-head {
-    margin-bottom: 15px;
-}
 
 section h2:first-of-type {
     padding-top: 20px;
+}
+
+section {
+    margin-bottom: 50px;
 }
