@@ -1,13 +1,4 @@
-// $('.nav-link').click(function(e) {\
-//     e.preventDefault();
-//     // console.log($(this).attr("data-link"));
-//     var link = $(this).attr("data-link");
-//     console.log(link);
-//     $('section.content').hide();
-//     $('section#' + link).show();
-//     $('button.navbar-toggler').click();
-// })
-
+// Navigation Scroll To Section Function
 $("a[href^='#']").click(function(e) {
     "use strict";
     e.preventDefault();
@@ -26,3 +17,29 @@ $("a[href^='#']").click(function(e) {
     $(e.target.parentNode).addClass("active");
 
 });
+
+
+// Project Modal Open/Close Function
+$(".project-image").click( function () {
+    var itemType = $(this).data("item-type");
+    var targetModalId = "#modal-" + itemType;
+    console.log(targetModalId);
+    $(targetModalId).removeClass("project-modal-hide");
+});
+
+$(".project-modal-close").click( function () {
+    $(".project-modal").addClass("project-modal-hide");
+});
+
+// Close modal when clicked outside of modal
+// $(document).click( function () {
+//     console.log(event.target.nodeName);
+//     if ($(event.target.nodeName).closest(".project-modal, .project-modal-content")) {
+//         console.log("clicked inside modal");
+//     } else {
+//         console.log("clicked outside modal");
+//     }
+//     var test = $(event.target).closest(".project-modal-content, .project-modal").length;
+//     console.log(test);
+//
+// });
