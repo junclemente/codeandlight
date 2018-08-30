@@ -1,5 +1,84 @@
-{% for project in projects %}
-<div class="project">
+
+<div class="container">
+
+{% macro show_projects(items, id_type) %}
+<div class="row">
+    {% for item in items %}
+    <div class="col project-box">
+        <h6 class="text-center">
+        {% if item.short_title %}
+            {{ item.short_title }}
+        {% else %}
+            {{ item.title }}
+        {% endif %}
+        </h6>
+
+
+        <div class="text-center">
+            <div>
+                <img id="image-{{ id_type }}-{{ loop.index }}" class="rounded project-image" src="/static/images/{{ item.image }}" data-item-type="{{ id_type }}-{{ loop.index }}">
+            </div>
+            <p class="project-icons">
+                {# Display Project Icons #}
+                {% if item.icons %}
+                    {% for icon in item.icons | sort %}
+                        &nbsp; <i class="fab fa-{{ icon_shortcuts[icon] }}"></i> &nbsp;
+                    {% endfor %}
+                {% endif %}
+            </p>
+
+            <div id="modal-{{ id_type }}-{{ loop.index }}" class="project-modal project-modal-hide">
+                <div class="project-modal-content">
+                    <div class="project-modal-header">
+                        <h5>{{ item.title }}</h5>
+                        <div class="row">
+                            {% if item.code %}
+                                <div class="col float-left">
+                                    <a href="{{ item.code }}" target="_blank">
+                                    <i class="fab fa-{{ icon_shortcuts['github'] }}"></i>
+                                    View Code
+                                    </a>
+                                </div>
+                            {% endif %}
+                            {% if item.url %}
+                                <div class="col float-right">
+                                    <a href="{{ item.url }}" target="_blank">
+                                    <i class="fas fa-{{ icon_shortcuts['browser'] }}"></i>
+                                    View Site
+                                    </a>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="project-modal-body">
+                    <p>{{ item.desc }}</p>
+                    </div>
+                <button type="button" class="project-modal-close">Close</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    {% endfor %}
+</div>
+{% endmacro %}
+
+{% if projects %}
+    <h4>Projects</h4>
+    {{ show_projects(projects, "project") }}
+{% endif %}
+
+{% if websites %}
+    <h4>Websites</h4>
+    {{ show_projects(websites, "website") }}
+{% endif %}
+
+</div>
+
+
+{#
+    OLD CODE
     <div class="project-head">
         <h4>{{ project.title }}</h4>
 
@@ -22,6 +101,8 @@
         <div class="col-md-4">
             <img class="project-image" src="/static/images/{{ project.image }}"
         alt="{{ project.title }}-image">
+            <img class="round" src="/static/images/{{ project.image }}">
+
         </div>
         <div class="col-md-8 text-box">
             {% if project.icons %}
@@ -36,3 +117,5 @@
     </div>
 </div>
 {% endfor %}
+
+#}
