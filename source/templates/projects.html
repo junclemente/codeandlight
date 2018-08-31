@@ -22,7 +22,7 @@
                 {# Display Project Icons #}
                 {% if item.icons %}
                     {% for icon in item.icons | sort %}
-                        &nbsp; <i class="fab fa-{{ icon_shortcuts[icon] }}"></i> &nbsp;
+                        &nbsp; <i class="{{ icon_shortcuts[icon][1] }} fa-{{ icon_shortcuts[icon][0] }}"></i> &nbsp;
                     {% endfor %}
                 {% endif %}
             </p>
@@ -35,7 +35,7 @@
                             {% if item.code %}
                                 <div class="col float-left">
                                     <a href="{{ item.code }}" target="_blank">
-                                    <i class="fab fa-{{ icon_shortcuts['github'] }}"></i>
+                                    <i class="{{ icon_shortcuts['github'][1] }} fa-{{ icon_shortcuts['github'][0] }}"></i>
                                     View Code
                                     </a>
                                 </div>
@@ -43,7 +43,7 @@
                             {% if item.url %}
                                 <div class="col float-right">
                                     <a href="{{ item.url }}" target="_blank">
-                                    <i class="fas fa-{{ icon_shortcuts['browser'] }}"></i>
+                                    <i class="{{ icon_shortcuts['browser'][1] }} fa-{{ icon_shortcuts['browser'][0] }}"></i>
                                     View Site
                                     </a>
                                 </div>
