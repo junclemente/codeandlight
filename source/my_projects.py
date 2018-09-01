@@ -229,7 +229,9 @@ websites = [
         "desc": "This website is built using Python and Flask to power the \
         the backend. Jinja2 is used for creating the HTML template. \
         Bootstrap, along with custom CSS3 and JavaScript/jQuery are used to \
-        handle the frontend."
+        handle the frontend. Local development is performed in the 'source/' \
+        directory. Once it is ready for deployment, GulpJS is run to create \
+        the production version of the site."
     },
     {
         "title": "Pacific Pathology, Inc. Website",
