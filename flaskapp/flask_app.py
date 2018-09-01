@@ -7,9 +7,11 @@ from my_projects import projects, websites, icon_shortcuts
 
 app = Flask(__name__)
 
+
 @app.route('/hello_world')
 def hello_world():
-    return 'Hello from Jun @ www.codeandlight.com!<br><p>Site coming soon...</p>'
+    return 'Hello from Jun @ www.codeandlight.com!<br> \
+    <p>Site coming soon...</p>'
 
 
 @app.route('/')
