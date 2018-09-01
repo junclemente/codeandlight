@@ -16,7 +16,13 @@
 
         <div class="text-center">
             <div>
-                <img id="image-{{ id_type }}-{{ loop.index }}" class="rounded project-image" src="/static/images/{{ item.image }}" data-item-type="{{ id_type }}-{{ loop.index }}">
+                <img id="image-{{ id_type }}-{{ loop.index }}" class="rounded project-image"
+                    {% if item.image %}
+                        src="/static/images/{{ item.image }}"
+                    {% else %}
+                        src="{{ url_for('static', filename='images/codeandlight-generic-thumb.jpg') }}"
+                    {% endif %}
+                    data-item-type="{{ id_type }}-{{ loop.index }}">
             </div>
             <p class="project-icons">
                 {# Display Project Icons #}
