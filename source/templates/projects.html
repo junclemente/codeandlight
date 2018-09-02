@@ -28,12 +28,7 @@
                 </div>
             </div>
             {# Display Project Icons #}
-            <p class="project-icons
-                {% if item.icons %}
-                    {% for icon in item.icons %}
-                        tech-{{ icon }}
-                    {% endfor %}
-            ">
+            <p class="project-icons {% if item.icons %}{% for icon in item.icons %}tech-{{ icon }} {% endfor %}">
                     {% for icon in item.icons | sort %}
                         &nbsp; <i class="{{ icon_shortcuts[icon][1] }} fa-{{ icon_shortcuts[icon][0] }}"></i> &nbsp;
                     {% endfor %}
