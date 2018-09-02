@@ -15,7 +15,7 @@
 
 
         <div class="text-center">
-            <div>
+            <div class="project-image-container">
                 <img id="image-{{ id_type }}-{{ loop.index }}" class="rounded project-image"
                     {% if item.image %}
                         src="/static/images/{{ item.image }}"
@@ -23,10 +23,17 @@
                         src="{{ url_for('static', filename='images/codeandlight-generic-thumb.jpg') }}"
                     {% endif %}
                     data-item-type="{{ id_type }}-{{ loop.index }}">
+                <div class="project-image-overlay text-center">
+                    <p>Click for more info</p>
+                </div>
             </div>
-            <p class="project-icons">
-                {# Display Project Icons #}
+            {# Display Project Icons #}
+            <p class="project-icons
                 {% if item.icons %}
+                    {% for icon in item.icons %}
+                        tech-{{ icon }}
+                    {% endfor %}
+            ">
                     {% for icon in item.icons | sort %}
                         &nbsp; <i class="{{ icon_shortcuts[icon][1] }} fa-{{ icon_shortcuts[icon][0] }}"></i> &nbsp;
                     {% endfor %}
@@ -56,8 +63,8 @@
                             {% endif %}
                         </div>
                     </div>
-                    <div class="project-modal-body">
-                    <p>{{ item.desc }}</p>
+                    <div>
+                        <p>{{ item.desc }}</p>
                     </div>
                 <button type="button" class="project-modal-close">Close</button>
                 </div>
