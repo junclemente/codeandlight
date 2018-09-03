@@ -76,48 +76,48 @@ projects = [
         for the Udacity Full Stack Nanodegree Program. This also includes \
         unittests for testing the algorithms."
     },
-    {
-        "title": "Rock Paper Scissors Lizard Spock - Interactive Python \
-        Programming, Coursera.org",
-        "short_title": "RPSLS",
-        "url": "",
-        "code": "http://www.codeskulptor.org/#user38_8Qi7pug3rCMdldO_2.py",
-        "icons": ["python"],
-        "image": "rpsls-thumb.jpg",
-        "desc": "This is an example of using \
-        modular arithmetic to create a Rock-Paper-Scissors game but using \
-        the 'Big Bang Theory' version that includes Lizard and Spock. In this \
-        code, the 'Player' selection is pre-selected but the 'Computer' \
-        selection is randomly generated. To see the code in action, click on \
-        the 'Play' button."
-    },
-    {
-        "title": "Guess the Number - Interactive Python Programming, \
-        Coursera.org",
-        "short_title": "Guess the Number",
-        "url": "",
-        "code": "http://www.codeskulptor.org/#user38_nsLKdjBszTPVL5V_8.py",
-        "icons": ["python"],
-        "image": "guess-thumb.jpg",
-        "desc": "In this game, the 'Player' first \
-        selects a game level. The 'Player' then has seven (7) chances to \
-        guess the randomly generated number chosen by the computer. Click \
-        'Play' button to see the code in action."
-    },
-    {
-        "title": "Stopwatch: The Game - Interactive Python Programming, \
-        Coursera.org",
-        "short_title": "Stopwatch: The Game",
-        "url": "",
-        "code": "http://www.codeskulptor.org/#user38_LRG2nqWQ8TH0ZsT.py",
-        "icons": ["python"],
-        "image": "stopwatch-thumb.jpg",
-        "desc": "Python 'time' is formatted to a human-readable form to \
-        create a 'fun' little game where the 'Player' starts and stops a \
-        digital stopwatch. Each start is counted and every time the Player \
-        stops exactly on a second, the player is given a point. Press 'Play' \
-        to have a go at this game."
-    },
+    # {
+    #     "title": "Rock Paper Scissors Lizard Spock - Interactive Python \
+    #     Programming, Coursera.org",
+    #     "short_title": "RPSLS",
+    #     "url": "",
+    #     "code": "http://www.codeskulptor.org/#user38_8Qi7pug3rCMdldO_2.py",
+    #     "icons": ["python"],
+    #     "image": "rpsls-thumb.jpg",
+    #     "desc": "This is an example of using \
+    #     modular arithmetic to create a Rock-Paper-Scissors game but using \
+    #     the 'Big Bang Theory' version that includes Lizard and Spock. In this \
+    #     code, the 'Player' selection is pre-selected but the 'Computer' \
+    #     selection is randomly generated. To see the code in action, click on \
+    #     the 'Play' button."
+    # },
+    # {
+    #     "title": "Guess the Number - Interactive Python Programming, \
+    #     Coursera.org",
+    #     "short_title": "Guess the Number",
+    #     "url": "",
+    #     "code": "http://www.codeskulptor.org/#user38_nsLKdjBszTPVL5V_8.py",
+    #     "icons": ["python"],
+    #     "image": "guess-thumb.jpg",
+    #     "desc": "In this game, the 'Player' first \
+    #     selects a game level. The 'Player' then has seven (7) chances to \
+    #     guess the randomly generated number chosen by the computer. Click \
+    #     'Play' button to see the code in action."
+    # },
+    # {
+    #     "title": "Stopwatch: The Game - Interactive Python Programming, \
+    #     Coursera.org",
+    #     "short_title": "Stopwatch: The Game",
+    #     "url": "",
+    #     "code": "http://www.codeskulptor.org/#user38_LRG2nqWQ8TH0ZsT.py",
+    #     "icons": ["python"],
+    #     "image": "stopwatch-thumb.jpg",
+    #     "desc": "Python 'time' is formatted to a human-readable form to \
+    #     create a 'fun' little game where the 'Player' starts and stops a \
+    #     digital stopwatch. Each start is counted and every time the Player \
+    #     stops exactly on a second, the player is given a point. Press 'Play' \
+    #     to have a go at this game."
+    # },
     {
         "title": "Pong - Interactive Python Programming, Coursera.org",
         "short_title": "Pong",
@@ -131,18 +131,18 @@ projects = [
         player(s) move the paddles up and down the screen to return the ball \
         to the other side. Click 'Play' to see the code in action."
     },
-    {
-        "title": "Memory - Interactive Python Programming, Coursera.org",
-        "short_title": "Memory",
-        "url": "",
-        "code": "http://www.codeskulptor.org/#user38_jQTrmH6lK7LjLRe.py",
-        "icons": ["python"],
-        "image": "brain-thumb.jpg",
-        "desc": "A classic 'Memory' game. The cards are 'shuffled and placed \
-        face-down. The player selects cards in pairs. If they match, the \
-        cards remain face-up. The number of turns are tracked. How good is \
-        your memory? Press 'Play' to find out!"
-    },
+    # {
+    #     "title": "Memory - Interactive Python Programming, Coursera.org",
+    #     "short_title": "Memory",
+    #     "url": "",
+    #     "code": "http://www.codeskulptor.org/#user38_jQTrmH6lK7LjLRe.py",
+    #     "icons": ["python"],
+    #     "image": "brain-thumb.jpg",
+    #     "desc": "A classic 'Memory' game. The cards are 'shuffled and placed \
+    #     face-down. The player selects cards in pairs. If they match, the \
+    #     cards remain face-up. The number of turns are tracked. How good is \
+    #     your memory? Press 'Play' to find out!"
+    # },
     {
         "title": "Blackjack - Interactive Python Programming, Coursera.org",
         "short_title": "Blackjack",
