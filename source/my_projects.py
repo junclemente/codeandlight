@@ -169,7 +169,7 @@ projects = [
 websites = [
 
     {
-        "title": "GS Communication Website",
+        "title": "GS Communication",
         "short_title": "",
         "url": "http://www.gs-communication.com/",
         "code": "https://github.com/junclemente/flask_gscom",
@@ -181,7 +181,7 @@ websites = [
         using HTML5, CSS3 and Bootstrap."
     },
     {
-        "title": "Wedding Website",
+        "title": "M&G Wedding",
         "short_title": "",
         "url": "http://www.graceandmelvin.com",
         "code": "https://github.com/junclemente/mgsite",
@@ -195,7 +195,7 @@ websites = [
         name from GoDaddy. The RSVP is handled using Google Docs services."
     },
     {
-        "title": "Body Evolution Website",
+        "title": "Body Evolution",
         "short_title": "",
         "url": "https://www.bodyevolution.org",
         "code": "",
@@ -207,7 +207,7 @@ websites = [
         Framework, some PHP and WordPress as a Content Management System."
     },
     {
-        "title": "Catechism Class Website",
+        "title": "Catechism Class",
         "short_title": "",
         "url": "https://www.catechismclass.com",
         "code": "",
@@ -234,7 +234,7 @@ websites = [
         the production version of the site."
     },
     {
-        "title": "Pacific Pathology, Inc. Website",
+        "title": "Pacific Pathology, Inc.",
         "short_title": "",
         "url": "http://www.pacificpathology.ccom",
         "code": "",
