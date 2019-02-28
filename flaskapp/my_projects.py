@@ -171,7 +171,7 @@ websites = [
     {
         "title": "GS Communication",
         "short_title": "",
-        "url": "http://www.gs-communication.com/",
+        # "url": "http://www.gs-communication.com/",
         "code": "https://github.com/junclemente/flask_gscom",
         "icons": ["html5", "javascript", "python", "css3"],
         "image": "gscom-thumb.jpg",
@@ -183,7 +183,7 @@ websites = [
     {
         "title": "M&G Wedding",
         "short_title": "",
-        "url": "http://www.graceandmelvin.com",
+        "url": "https://junclemente.github.io/mgsite",
         "code": "https://github.com/junclemente/mgsite",
         "icons": ["html5", "css3", "javascript"],
         "image": "mgsite-thumb.jpg",
